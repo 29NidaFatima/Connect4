@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    background-color: #a4a4ac;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+#game-board {
+    height: 540px;
+    width: 630px;
+    background: linear-gradient(to bottom right, #007BFF, #0056b3);
+    border: 10px solid #003366;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid #003366;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.tile:hover {
+    transform: scale(1.1);
+}
+
+.red-piece {
+    background-color: red;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+.yellow-piece {
+    background-color: yellow;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px auto;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#winner {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
